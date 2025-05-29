@@ -1,4 +1,4 @@
-package com.example.crypto_tracker.service;
+package com.example.cryptoportfoliotracker.service;
 
 import com.example.crypto_tracker.dto.CryptoMarketDTO;
 

@@ -1,6 +1,7 @@
-package com.example.crypto_tracker.service;
+package com.example.cryptoportfoliotracker.service;
 
 import com.example.crypto_tracker.dto.CryptoMarketDTO;
+import com.example.cryptoportfoliotracker.service.ExternalPriceInterface;
 import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;

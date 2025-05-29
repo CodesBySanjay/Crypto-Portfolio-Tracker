@@ -1,7 +1,7 @@
-package com.example.crypto_tracker.controller;
+package com.example.cryptoportfoliotracker.controller;
 
 import com.example.crypto_tracker.dto.CryptoMarketDTO;
-import com.example.crypto_tracker.service.ExternalPriceService;
+import com.example.cryptoportfoliotracker.service.ExternalPriceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
