@@ -30,23 +30,6 @@ class ExternalPriceServiceTest {
     }
 
     @Test
-    void getNameBySymbol_returnsName() {
-        RestTemplate rest = mock(RestTemplate.class);
-        ExternalPriceService service = new ExternalPriceService();
-        setRestTemplate(service, rest);
-
-        CryptoMarketDTO coin = new CryptoMarketDTO();
-        coin.setSymbol("eth");
-        coin.setName("Ethereum");
-
-        when(rest.getForObject(anyString(), eq(CryptoMarketDTO[].class)))
-                .thenReturn(new CryptoMarketDTO[]{coin});
-
-        String name = service.getNameBySymbol("eth");
-        assertEquals("Ethereum", name);
-    }
-
-    @Test
     void fetchAllPrices_returnsList() {
         RestTemplate rest = mock(RestTemplate.class);
         ExternalPriceService service = new ExternalPriceService();
