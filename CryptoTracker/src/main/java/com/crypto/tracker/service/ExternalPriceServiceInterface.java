@@ -9,11 +9,7 @@ public interface ExternalPriceServiceInterface {
 
     Double getPriceBySymbol(String symbol);
 
-    String getNameBySymbol(String symbol);
-
     List<CryptoMarketDTO> fetchAllPrices();
-
-    String getSymbolByName(String name);
 
     void updatePrices();
 }
