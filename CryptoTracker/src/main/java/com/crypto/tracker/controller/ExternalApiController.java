@@ -27,14 +27,4 @@ public class ExternalApiController {
         return externalPriceServiceInterface.getPriceBySymbol(symbol);
     }
 
-    @GetMapping("/name/{symbol}")
-    public String getCryptoNamebySymbol(@PathVariable String symbol) {
-        return externalPriceServiceInterface.getNameBySymbol(symbol);
-    }
-
-    @GetMapping("/symbol/{name}")
-    public String getCryptoSymbol(@PathVariable String name) {
-        return externalPriceServiceInterface.getSymbolByName(name);
-    }
-
 }
