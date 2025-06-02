@@ -41,27 +41,6 @@ public class ExternalPriceService implements ExternalPriceServiceInterface {
     }
 
     @Override
-    public String getNameBySymbol(String symbol) {
-        try
-        {
-            CryptoMarketDTO[] coins = restTemplate.getForObject(apiUrl, CryptoMarketDTO[].class);
-            if (coins == null)
-                return null;
-
-            return Arrays.stream(coins)
-                    .filter(coin ->  coin.getSymbol().equalsIgnoreCase(symbol))
-                    .map(CryptoMarketDTO::getName)
-                    .findFirst()
-                    .orElse(null);
-        }
-        catch (Exception e)
-        {
-            System.err.println("Error fetching name for " + symbol + ": " + e.getMessage());
-            return null;
-        }
-    }
-
-    @Override
     public List<CryptoMarketDTO> fetchAllPrices() {
         try
         {
@@ -76,17 +55,6 @@ public class ExternalPriceService implements ExternalPriceServiceInterface {
         }
     }
 
-    @Override
-    public String getSymbolByName(String name) {
-        CryptoMarketDTO[] coins = restTemplate.getForObject(apiUrl, CryptoMarketDTO[].class);
-        if (coins == null) throw new InvalidInputException("No market data found");
-
-        return Arrays.stream(coins)
-                .filter(coin -> name.equalsIgnoreCase(coin.getName()))
-                .map(CryptoMarketDTO::getSymbol)
-                .findFirst()
-                .orElseThrow(() -> new InvalidInputException("Invalid currency name! Check the spelling"));
-    }
 
     @Override
     public void updatePrices() {
