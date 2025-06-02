@@ -275,8 +275,8 @@ spring.jpa.hibernate.ddl-auto=update
 
 | Name                   | Role                           |
 |------------------------|--------------------------------|
-| [Sanjay Praveen](https://github.com/sanxjay-xy)         | Project Lead, Authentication   |
-| [Ragul Sankar](https://github.com/RagulSankar04)           | Price Tracking Module          |
-| [Sandhiya R](https://github.com/Sandhiya1718)             | Portfolio Management Module    |
-| [K Harshitha Chowdary](https://github.com/harshichow-driod)   | Alerts, Price Threshold Logic  |
-| [Preetha Varadarajan](https://github.com/PreethaVaradaOfficial)    | Diagram Designs, Testing       |
+| <a href="https://github.com/sanxjay-xy" target="_blank">Sanjay Praveen</a>         | Project Lead, Authentication   |
+| <a href="https://github.com/RagulSankar04" target="_blank">Ragul Sankar</a>           | Price Tracking Module          |
+| <a href="https://github.com/Sandhiya1718" target="_blank">Sandhiya R</a>             | Portfolio Management Module    |
+| <a href="https://github.com/harshichow-driod" target="_blank">K Harshitha Chowdary</a>   | Alerts, Price Threshold Logic  |
+| <a href="https://github.com/PreethaVaradaOfficial" target="_blank">Preetha Varadarajan</a>    | Diagram Designs, Testing       |
